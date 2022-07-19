@@ -1,3 +1,6 @@
+/* estilização base */
+
+
 header{
     background: linear-gradient(black, #4b4b4b, #838383, rgb(255, 255, 255));
     padding: 20px 0;
@@ -6,8 +9,11 @@ header{
 html, body {
     margin: 0;
     padding: 0;
-    
+    font-family: 'Poppins', sans-serif;
+
   }
+
+  /* footer*/
 
 .caixa{
     position: relative;
@@ -51,7 +57,7 @@ nav a:hover{
 }
 
 .produtos li {
-    display: inline-block;
+    display:inline-block;
     text-align: center;
     width: 30%;
     vertical-align: top;
@@ -101,4 +107,38 @@ footer{
     color: #cacaca;
     font-size: 20px;
     margin: 20px;
+}
+
+
+
+
+@media screen and (max-width:480px ) {
+    .caixa, .produtos {
+    width: 100%;
+    }
+
+    .caixa{
+        position:center;
+    }
+
+    nav{
+        position:static;
+    }
+
+    .logo {
+        justify-content: center;
+    }
+
+  .produtos, .produto-descricao,.produto-preco{
+    
+    display:inline-flex;
+}
+
+
+
+
+    .imagem-produtos{
+        width: 100%;
+    }
+    
 }
